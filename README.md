@@ -11,22 +11,22 @@ For Kalman XY, Z download track_Kalman_3D.m For COBWEBS XY + Kalman Z download t
 
 All track functions share inputs:
 
-D: Desired diffusion coefficient of particle in meters squared per second.
+D: Desired diffusion coefficient of particle in meters squared per second. Suggested value: 6e-12
 
-s: max particle count rate in counts per second (cps). 
+s: max particle count rate in counts per second (cps). Suggested value range: (2.8e5, 7.0e7) 
 
-bofr: background intensity in cps on each side of any defined radii.
+bofr: background intensity in cps on each side of any defined radii. Suggested value range: (0,1e6)
 
-r: radial position of background intensity changes in meters relative to initial particle position.
+r: radial position of background intensity changes in meters relative to initial particle position. Suggested value: Even bg-[] Uneven bg: 2e-6
 
-ki: integral feedback control parameter along X/Y.
+ki: integral feedback control parameter along X/Y. Suggested value: 0.05
 
-kiz: integral feedback control parameter along Z.
+kiz: integral feedback control parameter along Z. Suggested value: 0.04
 
-N: number of steps desired to run given trajectories. 
+N: number of steps desired to run given trajectories. Suggested value: 5e4 (1 second trajectory)
 
-ogtau: Bin time in seconds prior to coercion.
+ogtau: Bin time in seconds prior to coercion. Suggested value: 20e-6
 
 To pass uniform background set bofr to desired value and pass null value [] for r. 
 
-For documentation on outputs, origin toolbox dependencies, and additional functionality see the wiki. 
+For additional documentation on outputs, originof toolbox dependencies, and suggested parameter values see the readme pdf. 
