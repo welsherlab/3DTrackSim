@@ -1,6 +1,6 @@
 # 3DTrackSim
 Numerical simulations of fully 3D active-feedback single-particle tracking for comparisons between combined online Bayesian and windowed estimation of background and signal localization (COBWEBS) and Kalman mapped gaussian assumed density filter localization. 
-For additional conceptual information see 2D algorithm development, https://doi.org/10.1063/5.0118317 and 3D communication conference proceeding, 
+For additional conceptual information see 2D algorithm development, https://doi.org/10.1063/5.0118317 and 3D communication conference proceeding, DOI tbd. 
 
 MATLAB code written in MATLAB R2022a.
 Requires Signal Processing Toolbox and and Statistics and Machine Learning Toolboxes
@@ -29,4 +29,4 @@ ogtau: Bin time in seconds prior to coercion. Suggested value: 20e-6
 
 To pass uniform background set bofr to desired value and pass null value [] for r. 
 
-For additional documentation on outputs, originof toolbox dependencies, and suggested parameter values see the readme pdf. 
+For additional documentation on outputs, originof toolbox dependencies, and suggested parameter values see the READ_more_documentation pdf. 
